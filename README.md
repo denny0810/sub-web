@@ -1,29 +1,35 @@
-# sub-web
+# sub-web 
 
-基于 vue-cli 与 [tindy2013/subconverter](https://github.com/tindy2013/subconverter) 后端实现的配置自动生成。
+fork from https://github.com/CareyWang/sub-web. branch of 'customised' is designed for personal purpose.
 
-## Table of Contents
+## Table of Contents 
 
-- [ChangeLog](#ChangeLog)
-- [Docker](#Docker)
-- [Requirements](#Requirements)
-- [Install](#install)
-- [Usage](#usage)
-- [Related](#Related)
-- [Contributing](#contributing)
-- [License](#license)
+- [ChangeLog](#ChangeLog) 
+- [Docker](#Docker) 
+- [Requirements](#Requirements) 
+- [Install](#install) 
+- [Usage](#usage) 
+- [Related](#Related) 
+- [Contributing](#contributing) 
+- [License](#license) 
 
-## ChangeLog
+## ChangeLog 
+ 
+- 2024/11/1
 
+  - 更新`/src/views/Subconverter.vue`添加自定义ACL4SSR配置。
+  - 更新action workflow触发branch分支
+    
 - 20200730
 
-  - 独立各类后端配置到 .env 文件中，现在修改后端只需要修改 .env 即可。
+  - 独立各类后端配置到 .env 文件中，现在修改后端只需要修改 .env 即可。 
 
-
+ 
 ## Docker
-
+ 
 ```shell
 docker run -d -p 58080:80 --restart always --name subweb careywong/subweb:latest
+
 ```
 
 若需要对代码进行修改，你需要在本地构建镜像并运行。
