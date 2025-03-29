@@ -1,9 +1,10 @@
 name: Build and Push Multi-Arch Docker Image
 
 on:
-  push:
-    branches:
-      - master
+  # push:
+  #  branches:
+  #    - master
+  workflow_dispatch:  # 触发手动事件
 
 jobs:
   build-and-push:
@@ -28,4 +29,4 @@ jobs:
         context: .
         platforms: linux/amd64,linux/arm64
         push: true
-        tags: careywong/subweb:latest
+        tags: denny0810/subweb:latest
